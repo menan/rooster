@@ -1,0 +1,6 @@
+{
+    "eventName": "get_time",
+    "url": "http://www.timeapi.org/est?%25I:%25M%20%25p",
+    "requestType": "GET",
+    "mydevices": true
+}

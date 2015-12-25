@@ -1,0 +1,6 @@
+{
+    "eventName": "get_quote",
+    "url": "qu0ter.herokuapp.com/quotes/today.json",
+    "requestType": "GET",
+    "mydevices": true
+}
