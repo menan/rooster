@@ -536,6 +536,20 @@ void Adafruit_GFX::setRotation(uint8_t x) {
   }
 }
 
+uint16_t Adafruit_GFX::getStringWidth(String s){
+	uint8_t i=0;
+	uint16_t w=0;
+	//uint8_t c=s[0];
+	while(uint8_t c=s[i++]){
+		w+=pgm_read_byte(&fontDesc[c-fontStart].width)+fontKern;
+	}
+	return w;
+}
+
+uint8_t Adafruit_GFX::getCharHeight(){
+	return pgm_read_byte(&fontDesc[0].height); //all chars are same height so use height of space char
+}
+
 // Return the size of the display (per current rotation)
 int16_t Adafruit_GFX::width(void) {
   return _width;

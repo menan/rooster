@@ -65,7 +65,12 @@ class Adafruit_GFX : public Print {
     height(void),
     width(void);
 
-  uint8_t getRotation(void);
+  uint16_t
+  	getStringWidth(String s);
+
+  uint8_t
+    getRotation(void),
+  	getCharHeight();
 
  protected:
   const int16_t
