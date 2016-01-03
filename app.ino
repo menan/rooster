@@ -43,9 +43,9 @@ void setup() {
 // called forever really fast
 void loop() {
     Serial.println("Subscribing to events!");
-    time_subscription();
+    /*time_subscription();
     quote_subscription();
-    weather_subscription();
+    weather_subscription();*/
 }
 
 void time_subscription(){
